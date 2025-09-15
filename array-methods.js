@@ -47,10 +47,6 @@ const users = getUsers();
  * 24. Obtener un array con solo los valores de los objetos.
  */
 
-const numberUsers = users.map(() => {
-  return;
-});
-
 
 // ejercicio 11
 
@@ -63,18 +59,6 @@ const CityUserNumber = users
 console.log('ejercicio 11', CityUserNumber);
 
 // ejercicio 11
-
-// const CityUserNumber = [];
-
-// users.sort()
-// .forEach((user)=>{
-//   const city= user.city
-//   CityUserNumber[city] = (CityUserNumber[city] || 0) + 1;
-// });
-
-// console.log(CityUserNumber);
-
-
 
 
 //ejercicio 22
