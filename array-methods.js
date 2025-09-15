@@ -47,14 +47,47 @@ const users = getUsers();
  * 24. Obtener un array con solo los valores de los objetos.
  */
 
-
-const numberUsers = users.map(()=> { 
-  return
-})
-
-console.log (users)
+const numberUsers = users.map(() => {
+  return;
+});
 
 
-const CityUserNumber = users.forEach ((init,sumaCity)=> users.filter ((city)=> includes (cities)){
-  
-})
+// ejercicio 11
+
+const CityUserNumber = users
+.reduce((acc, items) => {
+  acc[items.city] = (acc[items.city] || 0) + 1;
+  return acc;
+}, []);
+
+console.log('ejercicio 11', CityUserNumber);
+
+// ejercicio 11
+
+// const CityUserNumber = [];
+
+// users.sort()
+// .forEach((user)=>{
+//   const city= user.city
+//   CityUserNumber[city] = (CityUserNumber[city] || 0) + 1;
+// });
+
+// console.log(CityUserNumber);
+
+
+
+
+//ejercicio 22
+
+const UserNotNull = users.filter(
+  (user) =>
+    user.name !== null &&
+    user.last_name !== null &&
+    user.age !== null &&
+    user.gender !== null &&
+    user.email !== null &&
+    user.phone !== null &&
+    user.city !== null
+);
+
+console.log('ejercicio 22', UserNotNull);
